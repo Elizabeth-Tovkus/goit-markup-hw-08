@@ -1,0 +1,28 @@
+.join {
+    /* display: flex;
+    align-items: baseline;
+    justify-content: center;
+    flex-direction: column; */
+    /* width: 206px;
+    height: 44px;
+    flex-wrap: wrap; */
+    margin-right: auto;
+}
+
+.join__text {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--light-txt-cl);
+    margin-bottom: 20px;
+}
+
+.join-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-left: 70px;
+}

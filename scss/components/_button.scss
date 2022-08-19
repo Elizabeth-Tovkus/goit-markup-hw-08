@@ -1,0 +1,33 @@
+.btn {
+    max-width: 200px;
+    min-width: 73px;
+    min-height: 38px;
+    padding: 6px 22px;
+    border: none;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(26 / 16);
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--main-txt-cl);
+    background-color: var(--contacts-bg-cl);
+    /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); */
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color var(--anim), color var(--anim), box-shadow var(--anim);
+    
+    &--accent {
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        background-color: var(--accent-txt-cl);
+        color: var(--light-txt-cl);
+    }
+
+    &:hover,
+    &:focus {
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        background-color: var(--accent-txt-cl);
+        color: var(--light-txt-cl);
+    }
+}
+
