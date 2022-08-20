@@ -101,9 +101,15 @@
 }
 
 .form-agreement__text {
-  font-size: 14px;
+  font-size: 12px;
+  line-height: calc(12 / 14);
   user-select: none;
   text-underline-position: under;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+      line-height: calc(24 / 14);
+  }
 }
 
 .form-agreement__link {

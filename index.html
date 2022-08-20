@@ -25,7 +25,7 @@
   </head>
   <body data-page>
     <!-- Header section -->
-    <!-- <header class="header">
+    <header class="header">
       <div class="conteiner header__conteiner">
         <a class="logo header__logo link" href="./index.html"
           ><span class="header__logo--cl">Web</span>Studio</a
@@ -44,14 +44,14 @@
           </ul>
         </nav>
         <ul class="header__list list">
-          <li class="nav__item">
+          <li class="header__item">
             <a class="header__mail link" href="mailto:info@devstudio.com">
               <svg class="header__icon" width="16" height="12">
                 <use href="./images/icons.svg#mail"></use></svg
               >info@devstudio.com</a
             >
           </li>
-          <li class="nav__item">
+          <li class="header__item">
             <a class="header__phone link" href="tel:++380961111111">
               <svg class="header__icon" width="10" height="16">
                 <use href="./images/icons.svg#smartphone"></use></svg
@@ -60,16 +60,16 @@
           </li>
         </ul>
       </div>
-    </header> -->
+    </header>
     <!-- Main section -->
     <main>
       <!-- Hero section -->
-      <!-- <section class="hero">
+      <section class="hero">
         <div class="conteiner">
           <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
           <button class="hero__btn" type="button" data-modal-open>Заказать услугу</button>
         </div>
-      </section> -->
+      </section>
       <!-- Studio section -->
       <section class="studio section">
         <div class="conteiner">
@@ -123,7 +123,7 @@
         </div>
       </section>
       <!-- Portfolio section -->
-      <!-- <section class="portfolio section">
+      <section class="portfolio section">
         <div class="conteiner">
           <h2 class="section-title">Чем мы занимаемся</h2>
           <ul class="portfolio__list list card-set">
@@ -165,9 +165,9 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!-- Contacts section -->
-      <!-- <section class="contacts section">
+      <section class="contacts section">
         <div class="conteiner">
           <h2 class="section-title">Наша команда</h2>
           <ul class="contacts__list list card-set">
@@ -425,9 +425,9 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!-- Clients section -->
-      <!-- <section class="section">
+      <section class="section">
         <div class="conteiner">
           <h2 class="section-title">Постоянные клиенты</h2>
           <ul class="clients__list list card-set">
@@ -469,89 +469,92 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
     </main>
     <!-- Footer section -->
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="footer__conteiner conteiner">
-        <div class="footer__block">
-          <a class="header__logo link" href="./index.html"
-            ><span class="header__logo--cl">Web</span><span class="footer__logo">Studio</span></a
-          >
-          <address class="footer__address">
-            <ul class="footer__list list">
-              <li class="footer__item">
+        <div class="footer-tablet__conteiner">
+          <div class="footer__block">
+            <a class="footer__logo link" href="./index.html"
+              ><span class="header__logo--cl">Web</span
+              ><span class="footer__logo--cl">Studio</span></a
+            >
+            <address class="footer__address">
+              <ul class="footer__list list">
+                <li class="footer__item">
+                  <a
+                    class="footer__link link"
+                    href="https://goo.gl/maps/QZBMDNfzERsqLgiA8"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >г. Киев, пр-т Леси Украинки, 26</a
+                  >
+                </li>
+                <li class="footer__item">
+                  <a class="footer__phone link" href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li class="footer__item">
+                  <a class="footer__mail link" href="tel:++380961111111">+38 096 111 11 11</a>
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="join">
+            <p class="join__text">присоединяйтесь</p>
+            <ul class="socials list">
+              <li class="socials__item">
                 <a
-                  class="footer__link link"
-                  href="https://goo.gl/maps/QZBMDNfzERsqLgiA8"
+                  class="socials__link--dark link"
+                  href="https://instagram.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  >г. Киев, пр-т Леси Украинки, 26</a
                 >
+                  <svg class="socials__icon--dark" width="20" height="20">
+                    <use href="./images/icons.svg#instagram"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="footer__item">
-                <a class="footer__phone link" href="mailto:info@devstudio.com"
-                  >info@devstudio.com</a
+              <li class="socials__item">
+                <a
+                  class="socials__link--dark link"
+                  href="https://twitter.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
+                  <svg class="socials__icon--dark" width="20" height="20">
+                    <use href="./images/icons.svg#twitter"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="footer__item">
-                <a class="footer__mail link" href="tel:++380961111111">+38 096 111 11 11</a>
+              <li class="socials__item">
+                <a
+                  class="socials__link--dark link"
+                  href="https://www.facebook.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg class="socials__icon--dark" width="20" height="20">
+                    <use href="./images/icons.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socials__item">
+                <a
+                  class="socials__link--dark link"
+                  href="https://www.linkedin.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg class="socials__icon--dark" width="20" height="20">
+                    <use href="./images/icons.svg#linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
-        </div>
-        <div class="join">
-          <p class="join__text">присоединяйтесь</p>
-          <ul class="socials list">
-            <li class="socials__item">
-              <a
-                class="socials__link--dark link"
-                href="https://instagram.com"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg class="socials__icon--dark" width="20" height="20">
-                  <use href="./images/icons.svg#instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="socials__item">
-              <a
-                class="socials__link--dark link"
-                href="https://twitter.com"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg class="socials__icon--dark" width="20" height="20">
-                  <use href="./images/icons.svg#twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="socials__item">
-              <a
-                class="socials__link--dark link"
-                href="https://www.facebook.com"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg class="socials__icon--dark" width="20" height="20">
-                  <use href="./images/icons.svg#facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="socials__item">
-              <a
-                class="socials__link--dark link"
-                href="https://www.linkedin.com"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg class="socials__icon--dark" width="20" height="20">
-                  <use href="./images/icons.svg#linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+          </div>
         </div>
         <div class="subscription">
           <p class="subscription__text">Подпишитесь на рассылку</p>
@@ -574,7 +577,7 @@
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer>
 
     <!-- Modal window -->
     <div class="backdrop is-hidden" data-modal>

@@ -1,7 +1,10 @@
 .subscription {
   /* display: flex; */
-  width: 580px;
-  height: 86px;
+  // width: 580px;
+  // height: 86px;
+  @media screen and (min-width: 1200px) {
+    margin-left: auto;
+  }
 }
 
 .subscription__text {
@@ -16,7 +19,11 @@
 }
 
 .subscription__form {
-  display: flex;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+  // display: flex;
+
 }
 
 .subscription__input {
@@ -25,7 +32,7 @@
   /* justify-content: center; */
   width: 358px;
   height: 50px;
-  margin-right: 12px;
+  // margin-right: 12px;
   outline: none;
   background-color: transparent;
   border: 1px solid var(--subscription-input);
@@ -33,6 +40,7 @@
   border-radius: 4px;
   padding-left: 16px;
   padding-right: 10px;
+  margin-bottom: 20px;
   color: var(--light-txt-cl);
   transition: border-color var(--anim);
 
@@ -40,9 +48,14 @@
   &:focus {
     border-color: var(--accent-txt-cl);
   }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 12px;
+  }
 }
 
 .subscription__btn {
+  margin: 0 auto;
   width: 200px;
   height: 50px;
   padding-left: 29px;
