@@ -1,0 +1,125 @@
+.menu-overlay{
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+
+    &.is-open{
+        opacity: 1;
+        pointer-events: initial;
+        visibility: visible;
+    }
+}
+.menu-conteiner{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--light-txt-cl);
+    padding: 48px 40px;
+
+    transform: translateX(100%);
+    transition: transform var(--anim);
+
+    .menu-overlay.is-open &{
+        transform: translateX(0);
+    }
+}
+.menu__btn{
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: fill var(--anim);
+
+    &:hover,
+    &:focus {
+        fill: var(--accent-txt-cl);
+  }
+}
+
+.menu__list{
+    gap: 32px;
+    &:first-child{
+        margin-bottom: auto;
+    }
+    &:nth-child(2){
+        margin-bottom: auto;
+    }
+    &:last-child {
+        // gap: 0;
+        margin-top: 64px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.menu__item{
+    font-weight: 500;
+    font-size: 40px;
+    line-height: calc(47 / 40);
+    letter-spacing: 0.02em;
+    color: var(--main-txt-cl);
+
+    margin-bottom: 32px;
+    
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+.menu__link{
+    
+    &:hover,
+    &:focus {
+        color: var(--accent-txt-cl);
+    }
+    
+    &--current {
+        color: var(--accent-txt-cl);
+    }
+}
+.menu__phone{
+    font-size: 34px;
+    line-height: calc(40 / 34);
+    color: var(--accent-txt-cl);
+}
+.menu__mail{
+    font-size: 24px;
+    line-height: calc(28 / 24);
+    color: var(--secondary-txt-cl);
+}
+.mob__socials{
+    gap: 10px;
+}
+.menu__socials{
+    color: var(--accent-txt-cl);
+    padding-right: 10px;
+        // padding-left: 10px;
+        border-right: 1px solid rgba(33, 33, 33, 0.2);
+        font-size: 18px;
+        line-height: calc(22 / 18);
+}
+.linkedin{
+    border: none;
+}
+// .menu__socials-item:not(:last-child) .menu__socials-item{
+//     padding-right: 10px;
+//     // padding-left: 10px;
+//     border-right: 1px solid rgba(33, 33, 33, 0.2);
+//     font-size: 18px;
+//     line-height: calc(22 / 18);
+// }
+
