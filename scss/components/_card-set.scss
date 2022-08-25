@@ -8,3 +8,21 @@
 .card-set__item {
     flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
 }
+
+.card-set-portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--indent);
+}
+
+.card-set-portfolio__item {
+    // flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
+    width: 450px;
+
+    @media screen and (min-width: 768px) {
+        width: 354px;
+    }
+     @media screen and (min-width: 1200px) {
+        width: 370px;
+    }
+}

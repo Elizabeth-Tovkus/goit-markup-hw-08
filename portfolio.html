@@ -33,10 +33,10 @@
         <nav class="nav">
           <ul class="nav__list list">
             <li class="nav__item">
-              <a class="nav__link nav__link--current link" href="./index.html">Студия</a>
+              <a class="nav__link link" href="./index.html">Студия</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link link" href="./portfolio.html">Портфолио</a>
+              <a class="nav__link nav__link--current link" href="./portfolio.html">Портфолио</a>
             </li>
             <li class="nav__item">
               <a class="nav__link link" href="#contacts">Контакты</a>
@@ -79,17 +79,71 @@
             <li><button class="filter__item btn" type="button">Дизайн</button></li>
             <li><button class="filter__item btn" type="button">Маркетинг</button></li>
           </ul>
-          <ul class="page-portfolio__list list card-set">
-            <li class="page-portfolio__item card-set__item">
+          <ul class="page-portfolio__list card-set-portfolio list">
+            <li class="page-portfolio__item card-set-portfolio__item">
               <a class="page-portfolio__link link" href="">
                 <div class="page-portfolio__card-overlay">
-                  <img
-                    class="page-portfolio__img"
-                    src="./images/portfolio/img1.jpeg"
-                    alt="Дизайн веб-сайта Технокряк"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <!-- Desktop screen -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-1@1x_lg.webp 1x,
+                        ./images/portfolio/img-1@2x_lg.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-1@1x_lg.jpg 1x,
+                        ./images/portfolio/img-1@2x_lg.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Tablet screen -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img-1@1x_md.webp 1x,
+                        ./images/portfolio/img-1@2x_md.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img-1@1x_md.jpg 1x,
+                        ./images/portfolio/img-1@2x_md.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Mobile screen -->
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img-1@1x_sm.webp 1x,
+                        ./images/portfolio/img-1@2x_sm.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img-1@1x_sm.jpg 1x,
+                        ./images/portfolio/img-1@2x_sm.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="page-portfolio__img"
+                      src="./images/portfolio/img-1@1x_sm.jpg"
+                      alt="Дизайн веб-сайта Технокряк"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
+
                   <div class="page-portfolio__overlay">
                     <p class="page-portfolio__overlay-text">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -104,16 +158,69 @@
                 </div>
               </a>
             </li>
-            <li class="page-portfolio__item card-set__item">
+            <li class="page-portfolio__item card-set-portfolio__item">
               <a class="page-portfolio__link link" href="">
                 <div class="page-portfolio__card-overlay">
-                  <img
-                    class="page-portfolio__img"
-                    src="./images/portfolio/img2.jpeg"
-                    alt="Постер"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <!-- Desktop screen -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-2@1x_lg.webp 1x,
+                        ./images/portfolio/img-2@2x_lg.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-2@1x_lg.jpg 1x,
+                        ./images/portfolio/img-2@2x_lg.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Tablet screen -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img-2@1x_md.webp 1x,
+                        ./images/portfolio/img-2@2x_md.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img-2@1x_md.jpg 1x,
+                        ./images/portfolio/img-2@2x_md.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Mobile screen -->
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img-2@1x_sm.webp 1x,
+                        ./images/portfolio/img-2@2x_sm.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img-2@1x_sm.jpg 1x,
+                        ./images/portfolio/img-2@2x_sm.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="page-portfolio__img"
+                      src="./images/portfolio/img-2@1x_sm.jpg"
+                      alt="Дизайн веб-сайта Технокряк"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <div class="page-portfolio__overlay">
                     <p class="page-portfolio__overlay-text">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -128,16 +235,69 @@
                 </div></a
               >
             </li>
-            <li class="page-portfolio__item card-set__item">
+            <li class="page-portfolio__item card-set-portfolio__item">
               <a class="page-portfolio__link link" href="">
                 <div class="page-portfolio__card-overlay">
-                  <img
-                    class="page-portfolio__img"
-                    src="./images/portfolio/img3.jpeg"
-                    alt="Лого приложения ресторана"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <!-- Desktop screen -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-3@1x_lg.webp 1x,
+                        ./images/portfolio/img-3@2x_lg.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-3@1x_lg.jpg 1x,
+                        ./images/portfolio/img-3@2x_lg.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Tablet screen -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img-3@1x_md.webp 1x,
+                        ./images/portfolio/img-3@2x_md.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img-3@1x_md.jpg 1x,
+                        ./images/portfolio/img-3@2x_md.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Mobile screen -->
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img-3@1x_sm.webp 1x,
+                        ./images/portfolio/img-3@2x_sm.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img-3@1x_sm.jpg 1x,
+                        ./images/portfolio/img-3@2x_sm.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="page-portfolio__img"
+                      src="./images/portfolio/img-3@1x_sm.jpg"
+                      alt="Дизайн веб-сайта Технокряк"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <div class="page-portfolio__overlay">
                     <p class="page-portfolio__overlay-text">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -152,16 +312,69 @@
                 </div></a
               >
             </li>
-            <li class="page-portfolio__item card-set__item">
+            <li class="page-portfolio__item card-set-portfolio__item">
               <a class="page-portfolio__link link" href="">
                 <div class="page-portfolio__card-overlay">
-                  <img
-                    class="page-portfolio__img"
-                    src="./images/portfolio/img4.jpeg"
-                    alt="Наушники"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <!-- Desktop screen -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-4@1x_lg.webp 1x,
+                        ./images/portfolio/img-4@2x_lg.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-4@1x_lg.jpg 1x,
+                        ./images/portfolio/img-4@2x_lg.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Tablet screen -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img-4@1x_md.webp 1x,
+                        ./images/portfolio/img-4@2x_md.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img-4@1x_md.jpg 1x,
+                        ./images/portfolio/img-4@2x_md.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Mobile screen -->
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img-4@1x_sm.webp 1x,
+                        ./images/portfolio/img-4@2x_sm.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img-4@1x_sm.jpg 1x,
+                        ./images/portfolio/img-4@2x_sm.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="page-portfolio__img"
+                      src="./images/portfolio/img-4@1x_sm.jpg"
+                      alt="Дизайн веб-сайта Технокряк"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <div class="page-portfolio__overlay">
                     <p class="page-portfolio__overlay-text">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -176,16 +389,69 @@
                 </div></a
               >
             </li>
-            <li class="page-portfolio__item card-set__item">
+            <li class="page-portfolio__item card-set-portfolio__item">
               <a class="page-portfolio__link link" href="">
                 <div class="page-portfolio__card-overlay">
-                  <img
-                    class="page-portfolio__img"
-                    src="./images/portfolio/img5.jpeg"
-                    alt="Две коробочки"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <!-- Desktop screen -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-5@1x_lg.webp 1x,
+                        ./images/portfolio/img-5@2x_lg.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-5@1x_lg.jpg 1x,
+                        ./images/portfolio/img-5@2x_lg.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Tablet screen -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img-5@1x_md.webp 1x,
+                        ./images/portfolio/img-5@2x_md.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img-5@1x_md.jpg 1x,
+                        ./images/portfolio/img-5@2x_md.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Mobile screen -->
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img-5@1x_sm.webp 1x,
+                        ./images/portfolio/img-5@2x_sm.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img-5@1x_sm.jpg 1x,
+                        ./images/portfolio/img-5@2x_sm.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="page-portfolio__img"
+                      src="./images/portfolio/img-5@1x_sm.jpg"
+                      alt="Дизайн веб-сайта Технокряк"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <div class="page-portfolio__overlay">
                     <p class="page-portfolio__overlay-text">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -200,16 +466,69 @@
                 </div></a
               >
             </li>
-            <li class="page-portfolio__item card-set__item">
+            <li class="page-portfolio__item card-set-portfolio__item">
               <a class="page-portfolio__link link" href="">
                 <div class="page-portfolio__card-overlay">
-                  <img
-                    class="page-portfolio__img"
-                    src="./images/portfolio/img6.jpeg"
-                    alt="Дизайн веб-сайта Inspiration has no Borders"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <!-- Desktop screen -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-6@1x_lg.webp 1x,
+                        ./images/portfolio/img-6@2x_lg.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-6@1x_lg.jpg 1x,
+                        ./images/portfolio/img-6@2x_lg.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Tablet screen -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img-6@1x_md.webp 1x,
+                        ./images/portfolio/img-6@2x_md.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img-6@1x_md.jpg 1x,
+                        ./images/portfolio/img-6@2x_md.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Mobile screen -->
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img-6@1x_sm.webp 1x,
+                        ./images/portfolio/img-6@2x_sm.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img-6@1x_sm.jpg 1x,
+                        ./images/portfolio/img-6@2x_sm.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="page-portfolio__img"
+                      src="./images/portfolio/img-6@1x_sm.jpg"
+                      alt="Дизайн веб-сайта Технокряк"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <div class="page-portfolio__overlay">
                     <p class="page-portfolio__overlay-text">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -224,16 +543,69 @@
                 </div></a
               >
             </li>
-            <li class="page-portfolio__item card-set__item">
+            <li class="page-portfolio__item card-set-portfolio__item">
               <a class="page-portfolio__link link" href="">
                 <div class="page-portfolio__card-overlay">
-                  <img
-                    class="page-portfolio__img"
-                    src="./images/portfolio/img7.jpeg"
-                    alt="Дизайн журнала"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <!-- Desktop screen -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-7@1x_lg.webp 1x,
+                        ./images/portfolio/img-7@2x_lg.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-7@1x_lg.jpg 1x,
+                        ./images/portfolio/img-7@2x_lg.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Tablet screen -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img-7@1x_md.webp 1x,
+                        ./images/portfolio/img-7@2x_md.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img-7@1x_md.jpg 1x,
+                        ./images/portfolio/img-7@2x_md.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Mobile screen -->
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img-7@1x_sm.webp 1x,
+                        ./images/portfolio/img-7@2x_sm.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img-7@1x_sm.jpg 1x,
+                        ./images/portfolio/img-7@2x_sm.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="page-portfolio__img"
+                      src="./images/portfolio/img-7@1x_sm.jpg"
+                      alt="Дизайн веб-сайта Технокряк"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <div class="page-portfolio__overlay">
                     <p class="page-portfolio__overlay-text">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -248,16 +620,69 @@
                 </div></a
               >
             </li>
-            <li class="page-portfolio__item card-set__item">
+            <li class="page-portfolio__item card-set-portfolio__item">
               <a class="page-portfolio__link link" href="">
                 <div class="page-portfolio__card-overlay">
-                  <img
-                    class="page-portfolio__img"
-                    src="./images/portfolio/img8.jpeg"
-                    alt="Бирка"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <!-- Desktop screen -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-8@1x_lg.webp 1x,
+                        ./images/portfolio/img-8@2x_lg.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-8@1x_lg.jpg 1x,
+                        ./images/portfolio/img-8@2x_lg.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Tablet screen -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img-8@1x_md.webp 1x,
+                        ./images/portfolio/img-8@2x_md.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img-8@1x_md.jpg 1x,
+                        ./images/portfolio/img-8@2x_md.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Mobile screen -->
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img-8@1x_sm.webp 1x,
+                        ./images/portfolio/img-8@2x_sm.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img-8@1x_sm.jpg 1x,
+                        ./images/portfolio/img-8@2x_sm.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="page-portfolio__img"
+                      src="./images/portfolio/img-8@1x_sm.jpg"
+                      alt="Дизайн веб-сайта Технокряк"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <div class="page-portfolio__overlay">
                     <p class="page-portfolio__overlay-text">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -272,16 +697,69 @@
                 </div></a
               >
             </li>
-            <li class="page-portfolio__item card-set__item">
+            <li class="page-portfolio__item card-set-portfolio__item">
               <a class="page-portfolio__link link" href="">
                 <div class="page-portfolio__card-overlay">
-                  <img
-                    class="page-portfolio__img"
-                    src="./images/portfolio/img9.jpeg"
-                    alt="Дизайн приложения Growing Business"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <!-- Desktop screen -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-9@1x_lg.webp 1x,
+                        ./images/portfolio/img-9@2x_lg.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-9@1x_lg.jpg 1x,
+                        ./images/portfolio/img-9@2x_lg.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Tablet screen -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img-9@1x_md.webp 1x,
+                        ./images/portfolio/img-9@2x_md.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img-9@1x_md.jpg 1x,
+                        ./images/portfolio/img-9@2x_md.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Mobile screen -->
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img-9@1x_sm.webp 1x,
+                        ./images/portfolio/img-9@2x_sm.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img-9@1x_sm.jpg 1x,
+                        ./images/portfolio/img-9@2x_sm.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="page-portfolio__img"
+                      src="./images/portfolio/img-9@1x_sm.jpg"
+                      alt="Дизайн веб-сайта Технокряк"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <div class="page-portfolio__overlay">
                     <p class="page-portfolio__overlay-text">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
